@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Impressum — AI Coding</title>
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0F1620; --surface: #18222F; --line: #2A3646;
+    --fg: #E7EBF1; --fg-muted: #93A0B2; --amber: #F2A93B; --teal: #5BC8C0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ink); color: var(--fg);
+    font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px; opacity: 0.06; pointer-events: none; z-index: 0;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1 { font-family: "Space Grotesk", system-ui, sans-serif; font-size: 34px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 8px; }
+  h2 { font-family: "Space Grotesk", system-ui, sans-serif; font-size: 19px; font-weight: 600; margin: 36px 0 10px; }
+  .mono { font-family: "IBM Plex Mono", monospace; }
+  .back { display: inline-flex; align-items: center; gap: 8px; font-family: "IBM Plex Mono", monospace; font-size: 14px; color: var(--fg-muted); margin: 40px 0 28px; }
+  .back:hover { color: var(--teal); text-decoration: none; }
+  .legal-ref { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--amber); letter-spacing: 0.04em; }
+  .ph { color: var(--amber); }
+  p { margin: 6px 0; }
+  .block { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px 26px; margin: 16px 0; }
+  .hint { font-size: 13.5px; color: var(--fg-muted); border-left: 2px solid var(--amber); padding-left: 14px; margin: 40px 0 60px; line-height: 1.6; }
+  footer { border-top: 1px solid var(--line); margin-top: 50px; padding: 28px 0; color: var(--fg-muted); font-size: 13.5px; }
+  :focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">‹ zurück zur Startseite</a>
+
+    <h1>Impressum</h1>
+    <p class="legal-ref">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</p>
+
+    <div class="block">
+      <h2 style="margin-top:0">Diensteanbieter</h2>
+      <p><span class="ph">Michael Wojke</span></p>
+      <p><span class="ph">Bahnhofstrasse 20</span></p>
+      <p><span class="ph">38729 Lutter</span></p>
+      <p><span class="ph">Deutschland</span></p>
+    </div>
+
+    <div class="block">
+      <h2 style="margin-top:0">Kontakt</h2>
+      <p>E-Mail: <a href="mailto:miwojke@web.de">miwojke@web.de</a></p>
+      <p>Telefon: <span class="ph">[optional — eintragen oder Zeile löschen]</span></p>
+    </div>
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p><span class="ph">[Vor- und Nachname]</span>, <span class="ph">[Anschrift wie oben]</span></p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Die hier angebotene Software wird ohne Gewähr und auf eigene Verantwortung der Nutzenden bereitgestellt (siehe Lizenzbedingungen der jeweiligen Programme).</p>
+
+    <h2>Haftung für Links</h2>
+    <p>Dieses Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Die bereitgestellte Software steht unter der jeweils angegebenen Open-Source-Lizenz (MIT) und darf entsprechend genutzt werden.</p>
+
+   
+
+    <footer>
+      <div class="wrap" style="padding:0">© <span id="year"></span> AI Coding · <a href="index.html">Startseite</a></div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
