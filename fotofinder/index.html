@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Fotofinder</title>
+<style>
+  :root { --accent:#2563EB; --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; }
+  * { box-sizing:border-box; }
+  body { font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         color:var(--ink); line-height:1.6; max-width:820px; margin:0 auto; padding:32px 20px; }
+  h1 { color:var(--accent); font-size:1.9rem; margin:0 0 4px; }
+  h2 { color:var(--accent); font-size:1.2rem; margin:28px 0 6px; }
+  h3 { font-size:1.02rem; margin:18px 0 4px; }
+  .sub { color:var(--muted); margin:0 0 20px; }
+  hr { border:none; border-top:1px solid var(--line); margin:24px 0; }
+  a { color:var(--accent); }
+  .todo { background:#fff7ed; border:1px solid #fdba74; border-radius:8px; padding:10px 14px; margin:10px 0; }
+  ul { padding-left:20px; } li { margin:4px 0; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; }
+  footer { color:var(--muted); font-size:.9rem; margin-top:32px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="sub">für die App <strong>Fotofinder</strong> &middot; Stand: <strong>[bitte Datum eintragen]</strong></p>
+
+<div class="todo">
+  <strong>Vor Veröffentlichung ausfüllen:</strong> Ersetze die mit <code>[…]</code> markierten Platzhalter
+  (Verantwortlicher, Anschrift, Datum). Die Angabe des Verantwortlichen ist rechtlich verpflichtend.
+</div>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+  Verantwortlich für die Datenverarbeitung im Zusammenhang mit dieser App ist:<br>
+  <strong>[Vorname Nachname]</strong><br>
+  [Straße und Hausnummer]<br>
+  [PLZ Ort], [Land]<br>
+  E-Mail: <a href="mailto:miwojke@web.de">miwojke@web.de</a>
+</p>
+
+<h2>2. Grundsatz: Verarbeitung auf dem Gerät</h2>
+<p>
+  Fotofinder ist eine Foto-Such- und Galerie-App. Sie verarbeitet deine Daten grundsätzlich
+  <strong>lokal auf deinem Gerät</strong>. Fotos, erkannte Texte (OCR), vergebene Stichwörter (Tags)
+  und Standortdaten aus deinen Fotos <strong>verlassen dein Gerät nicht</strong> – mit Ausnahme der
+  unter Ziffer 5 klar benannten Fälle (Kartenanzeige, Ortsauflösung, freiwilliges Feedback).
+  Es gibt <strong>keine Nutzerkonten, keine Werbung, kein Tracking und keine Analyse-Werkzeuge</strong>.
+</p>
+
+<h2>3. Berechtigungen und ihre Zwecke</h2>
+<ul>
+  <li><strong>Fotos/Medien</strong> (<code>READ_MEDIA_IMAGES</code>, auf älteren Geräten <code>READ_EXTERNAL_STORAGE</code>):
+      Anzeigen und Durchsuchen deiner Bilder. Lokal.</li>
+  <li><strong>Medienstandort</strong> (<code>ACCESS_MEDIA_LOCATION</code>): Auslesen der in Fotos
+      gespeicherten GPS-Koordinaten für Suche/Sortierung nach Aufnahmeort. Lokal.</li>
+  <li><strong>Standort</strong> (<code>ACCESS_FINE_LOCATION</code>/<code>ACCESS_COARSE_LOCATION</code>):
+      nur bei Umkreissuche/Entfernungssortierung, um den aktuellen Standort als Bezugspunkt zu bestimmen.
+      Wird nicht dauerhaft gespeichert.</li>
+  <li><strong>Internet / Netzwerkstatus</strong>: zum Laden der Kartenkacheln und für die Ortsauflösung.</li>
+  <li><strong>Vordergrunddienst und Benachrichtigung</strong>: zum Anzeigen des Indexierungsfortschritts.</li>
+</ul>
+
+<h2>4. Lokale Analyse und gespeicherte Daten</h2>
+<p>
+  Zur Suche baut die App einen lokalen Index auf. Dabei wird mittels Texterkennung
+  (<em>ML Kit Text Recognition, on-device</em>) Text in Bildern erkannt. Erkannte Texte, Tags sowie
+  die aus den Fotos ausgelesenen Koordinaten und der Ordnername werden in einer
+  <strong>lokalen Datenbank auf dem Gerät</strong> gespeichert und ausschließlich für die Suche
+  verwendet. Die Texterkennung läuft vollständig offline; es werden dafür keine Bilder an einen
+  Server gesendet.
+</p>
+
+<h2>5. Übermittlung an Dritte</h2>
+<h3>a) Kartenkacheln</h3>
+<p>
+  Beim Öffnen einer Kartenansicht werden Kartenkacheln von <strong>CARTO</strong>
+  (<code>basemaps.cartocdn.com</code>; Kartendaten © OpenStreetMap-Mitwirkende) geladen. Dabei werden
+  technisch notwendige Daten – insbesondere deine <strong>IP-Adresse</strong> und der angefragte
+  <strong>Kartenausschnitt</strong> – an den Anbieter übermittelt. Zweck: Anzeige der Karte.
+</p>
+<h3>b) Ortsauflösung (Reverse-Geocoding)</h3>
+<p>
+  Um zu Koordinaten einen lesbaren Ortsnamen anzuzeigen, nutzt die App den <strong>Geocoder des
+  Betriebssystems (Android)</strong>. Je nach Gerät/Hersteller kann dieser die Koordinaten an einen
+  Dienst des Geräteherstellers (z. B. Google) übermitteln.
+</p>
+<h3>c) Feedback per E-Mail</h3>
+<p>
+  Nutzt du das Feedback-Formular, bereitet die App eine E-Mail über deine E-Mail-App an
+  <a href="mailto:miwojke@web.de">miwojke@web.de</a> vor. Übermittelt werden deine Nachricht und –
+  <strong>nur wenn du dies aktivierst</strong> – Geräte- und Versionsinformationen (App-Version,
+  Android-Version, Gerätemodell). Der Versand erfolgt durch deine E-Mail-App/deinen Anbieter.
+</p>
+<h3>d) Spenden</h3>
+<p>
+  Der Spenden-Button öffnet einen externen Link (PayPal) im Browser; ab dann gelten die
+  Datenschutzbestimmungen von PayPal. Eine Spende schaltet keine Funktionen frei.
+</p>
+
+<h2>6. Kein Tracking, keine Werbung, kein Verkauf von Daten</h2>
+<p>Die App enthält keine Werbung, kein Analyse-/Tracking-SDK und gibt keine personenbezogenen
+  Daten zu Werbezwecken weiter oder verkauft sie.</p>
+
+<h2>7. Rechtsgrundlagen (DSGVO)</h2>
+<p>Art. 6 Abs. 1 DSGVO: Bereitstellung der angeforderten Funktionen (lit. b), berechtigtes Interesse
+  an einer funktionierenden, sicheren App (lit. f) sowie – bei Berechtigungen und freiwilligem
+  Feedback – Einwilligung (lit. a), jederzeit widerrufbar.</p>
+
+<h2>8. Speicherdauer</h2>
+<p>Lokal gespeicherte Daten (Index, Tags) verbleiben auf dem Gerät, bis du sie löschst oder die App
+  deinstallierst. Über die Systemeinstellungen jederzeit löschbar.</p>
+
+<h2>9. Deine Rechte</h2>
+<p>Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch nach DSGVO.
+  Da die Daten lokal liegen, kannst du sie selbst über die Systemeinstellungen einsehen und löschen.
+  Kontakt: <a href="mailto:miwojke@web.de">miwojke@web.de</a>. Es besteht ein Beschwerderecht bei
+  einer Aufsichtsbehörde.</p>
+
+<h2>10. Kinder</h2>
+<p>Die App richtet sich nicht gezielt an Kinder und erhebt nicht wissentlich Daten von Kindern.</p>
+
+<h2>11. Änderungen dieser Datenschutzerklärung</h2>
+<p>Diese Erklärung wird bei Änderungen der App oder der rechtlichen Rahmenbedingungen angepasst.
+  Es gilt die jeweils hier veröffentlichte Fassung.</p>
+
+<hr>
+<footer>
+  Fotofinder &middot; <a href="impressum.html">Impressum</a>
+</footer>
+
+</body>
+</html>
